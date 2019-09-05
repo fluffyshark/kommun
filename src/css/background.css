@@ -1,0 +1,14 @@
+.container {
+  overflow: hidden;
+  float: left;
+}
+
+.image_position {
+  position: absolute; top: 40%; left: 30%;
+  color: white;
+  fontFamily: AvenirNext-Bold;
+}
+
+.welcome_image {
+  width: 70%;
+}
