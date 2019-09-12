@@ -3,12 +3,28 @@
   float: left;
 }
 
-.image_position {
-  position: absolute; top: 40%; left: 30%;
-  color: white;
-  fontFamily: AvenirNext-Bold;
+.background_image_position {
+    position: absolute; top: 40%; left: 30%;
+    color: white;
+    fontFamily: AvenirNext-Bold;
 }
 
-.welcome_image {
-  width: 70%;
+.background_welcome_image {
+    width: 70%;
+}
+
+.background_test {
+  height:500px;
+  background-color: blue;
+}
+
+
+@media (max-width:1000px) {
+  .background_image_position {
+      position: absolute; top: 40%; left: 30%;
+      color: white;
+      fontFamily: AvenirNext-Bold;
+      width: 50%;
+  }
+
 }

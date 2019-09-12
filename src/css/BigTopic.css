@@ -1,0 +1,16 @@
+.bigtopic_text {
+  width:100%;
+  height:500px;
+  background:blue;
+  float:left;
+}
+
+@media (min-width:1000px) {
+  .bigtopic_text {
+    width:100%;
+    height:500px;
+    background:red;
+    float:left;
+  }
+
+}
