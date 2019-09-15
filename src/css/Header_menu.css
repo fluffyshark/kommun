@@ -42,3 +42,45 @@
   font-size: 20px;
   color:white;
 }
+
+
+
+.header_menutext_utbildning {
+  position: absolute; top: 6%; left: 18%;
+  font-family: 'AvenirNext-regular';
+  font-size: 20px;
+  color:white;
+}
+
+.header_menutext_bobygga {
+  position: absolute; top: 6%; left: 38%;
+  font-family: 'AvenirNext-regular';
+  font-size: 20px;
+  color:white;
+}
+
+.header_menutext_omsorg {
+  position: absolute; top: 6%; left: 50.5%;
+  font-family: 'AvenirNext-regular';
+  font-size: 20px;
+  color:white;
+}
+
+.header_menutext_uppleva {
+  position: absolute; top: 6%; left: 68.5%;
+  font-family: 'AvenirNext-regular';
+  font-size: 20px;
+  color:white;
+}
+
+.header_menutext_naringsliv {
+  position: absolute; top: 6%; left: 81%;
+  font-family: 'AvenirNext-regular';
+  font-size: 20px;
+  color:white;
+}
+
+.header_logo_white {
+  position: absolute; top: 4px; left: 9%;
+  width:3%;
+}

@@ -1,0 +1,59 @@
+.footer_container {
+  width: 100%;
+  background:#5a94db;
+  float:left;
+  height:385px;
+}
+
+.footer_straw {
+  float:right;
+  width:67.4%;
+
+
+}
+
+
+
+.footer_text_firstcolumn {
+  position: absolute; left:17%;
+  font-family: 'AvenirNext-regular';
+  font-size: 17px;
+  color:white;
+  margin-top: 35px;
+
+  float:left;
+  line-height: 120%;
+
+}
+
+h2 {
+  font-size: 24px;
+  color:white;
+}
+
+.footer_text_secondcolumn {
+  position: absolute; left:30%;
+  font-family: 'AvenirNext-regular';
+  font-size: 17px;
+  color:white;
+  margin-top: 35px;
+  margin-left: 120px;
+  float:left;
+  line-height: 120%;
+
+}
+
+.footer_text_thirdcolumn {
+  position: absolute; left:47%;
+  font-family: 'AvenirNext-regular';
+  font-size: 17px;
+  color:white;
+  margin-top: 35px;
+  margin-left: 120px;
+  float:left;
+  line-height: 120%;
+}
+
+.footer_text_thirdcolumn_title {
+  font-weight: bold;
+}

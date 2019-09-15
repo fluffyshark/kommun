@@ -1,7 +1,9 @@
 import React from 'react';
 import BackgroundVideo from './BackgroundVideo';
-import Header from './Header_menu';
+import Header from './Header';
 import BigTopic from './BigTopic';
+import Footer from './Footer.js';
+
 
 
 
@@ -13,6 +15,7 @@ class App extends React.Component {
           <BackgroundVideo />
           <Header />
           <BigTopic />
+          <Footer />
       </div>
     );
   }

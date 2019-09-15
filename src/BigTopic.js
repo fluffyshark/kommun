@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/BigTopic.css'
+import './css/bigTopic.css'
 
 
 class BigTopic extends React.Component {
