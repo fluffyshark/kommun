@@ -36,7 +36,6 @@ class Header extends React.Component {
     if (window.scrollY > 150) {
     return (
 
-
       <Spring
         from={{ opacity: 0, transform: 'translate3d(0,-30px,0)' }}
         to={{ opacity: 1, transform: 'translate3d(0,3px,0)' }}
@@ -79,7 +78,7 @@ class Header extends React.Component {
         }
 
       })
-      console.log("Yess")
+
     } else {
       this.setState({
         sticky: {
@@ -96,9 +95,8 @@ class Header extends React.Component {
         }
 
       })
-      console.log("No")
+
     }
-    console.log(window.scrollY)
 
   }
 
