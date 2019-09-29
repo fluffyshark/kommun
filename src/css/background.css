@@ -13,10 +13,6 @@
     width: 70%;
 }
 
-.background_test {
-  height:500px;
-  background-color: blue;
-}
 
 
 @media (max-width:1000px) {
@@ -27,4 +23,53 @@
       width: 50%;
   }
 
+}
+
+.background_second_menu {
+  width:100%;
+  height:70px;
+  background:#5a94db;
+  float:left;
+}
+
+
+
+.background_menutext_utbildning {
+  float: left;
+  font-family: 'AvenirNext-regular';
+  font-size: 20px;
+  color:white;
+  margin-left: 302px;
+}
+
+.background_menutext_bobygga {
+  float: left;
+  font-family: 'AvenirNext-regular';
+  font-size: 20px;
+  color:white;
+  margin-left: 47px;
+}
+
+.background_menutext_omsorg {
+  float: left;
+  font-family: 'AvenirNext-regular';
+  font-size: 20px;
+  color:white;
+  margin-left: 48px;
+}
+
+.background_menutext_uppleva {
+  float: left;
+  font-family: 'AvenirNext-regular';
+  font-size: 20px;
+  color:white;
+  margin-left: 45px;
+}
+
+.background_menutext_naringsliv {
+  float: left;
+  font-family: 'AvenirNext-regular';
+  font-size: 20px;
+  color:white;
+  margin-left: 45px;
 }

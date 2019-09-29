@@ -24,16 +24,13 @@ class Header extends React.Component {
         position: 'absolute', top: "0px", left: "0px"
       },
 
-
-
-
     }
 
   }
 
 
   addContent() {
-    if (window.scrollY > 150) {
+    if (window.scrollY > 570) {
     return (
 
       <Spring
@@ -62,7 +59,7 @@ class Header extends React.Component {
 
 
   listenScrollEvent = e => {
-    if (window.scrollY > 150) {
+    if (window.scrollY > 570) {
       this.setState({
         sticky: {
 
@@ -79,6 +76,7 @@ class Header extends React.Component {
 
       })
 
+
     } else {
       this.setState({
         sticky: {
@@ -93,12 +91,16 @@ class Header extends React.Component {
           position: 'absolute', top: "0px", left: "0px",
           height:"110px",
         }
-
       })
-
     }
 
   }
+
+
+
+
+
+
 
   componentDidMount() {
     window.addEventListener('scroll', this.listenScrollEvent)
@@ -106,20 +108,20 @@ class Header extends React.Component {
 
   render() {
 
-
-
     return (
       <div className="header_container" style={this.state.header}>
-        <img className="header_menu_panel_straw" src={straw} alt="straw" />
+          <img className="header_menu_panel_straw" src={straw} alt="straw" />
 
-        <div className="header_nonsticky_panel" style={this.state.nonsticky}>
-          <img className="header_logo_big" src={logo} alt="logo" />
-          <p className="header_menutext_invanare">INVÅNARE</p>
-          <p className="header_menutext_seochgora">SE & GÖRA</p>
-          <p className="header_menutext_foretagande">FÖRETAGANDE</p>
-          <p className="header_menutext_kommunochpolitik">KOMMUN & POLITIK</p>
-        </div>
+          <div className="header_nonsticky_panel" style={this.state.nonsticky}>
+              <img className="header_logo_big" src={logo} alt="logo" />
+              <p className="header_menutext_invanare">INVÅNARE</p>
+              <p className="header_menutext_seochgora">SE & GÖRA</p>
+              <p className="header_menutext_foretagande">FÖRETAGANDE</p>
+              <p className="header_menutext_kommunochpolitik">KOMMUN & POLITIK</p>
+          </div>
+
               {this.addContent()}
+              
       </div>
     );
   }

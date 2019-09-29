@@ -3,6 +3,7 @@ import background from './img/background.jpg';
 import welcome from './img/welcome.png';
 import './css/background.css'
 import {Spring} from 'react-spring/renderprops'
+import logo_white from './img/logo_white.png';
 
 class BackgroundVideo extends React.Component {
   constructor(props) {
@@ -58,6 +59,15 @@ class BackgroundVideo extends React.Component {
                 </div>
             )}
           </Spring>
+
+              <div className="background_second_menu">
+                <p className="background_menutext_utbildning">UTBILDNING & BARNOMSORG</p>
+                <p className="background_menutext_bobygga">BO, BYGG, MILJÖ</p>
+                <p className="background_menutext_omsorg">OMSORG & SOCIALT STÖD</p>
+                <p className="background_menutext_uppleva">UPPLEVA & GÖRA</p>
+                <p className="background_menutext_naringsliv">NÄRINGSLIV</p>
+              </div>
+
       </div>
 
       );
