@@ -1,7 +1,6 @@
 import React from 'react';
 import './css/footer.css'
 import footer_straw from './img/footer_image.png';
-import footer_mall from './img/footer_mall.png';
 
 class Footer extends React.Component {
   render() {

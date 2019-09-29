@@ -8,80 +8,56 @@ class BackgroundVideo extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {
-      backgroundContainer: {
-        width:window.innerWidth,
-        height:window.innerHeight
-      }
-    }
 
   }
 
-  listenScrollEvent = e => {
-    if (window.scrollY > 700) {
-      console.log("transform")
 
-      this.setState({
-        backgroundContainer:{
-          height:"500px"
-        }
-      })
-    }
+
+  welcomeImageController() {
+    return (
+
+      <Spring from={{ opacity: 1, marginTop: 0 }} to={{ opacity: 0, marginTop: -50 }}  config={{ delay:3000, duration:700 }}>
+        { props => (
+
+          <div className="background_image_position" style={props}>
+
+              <Spring from={{ opacity: 0, marginTop: -10 }} to={{ opacity: 1, marginTop: 0 }}  config={{ delay:500, duration:600 }}>
+                { props => (
+                      <div style={props}>
+                          <img className="background_welcome_image" src={welcome} alt="welcome" />
+                      </div>
+                )}
+              </Spring>
+
+          </div>
+
+        )}
+      </Spring>
+    );
   }
 
 
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.listenScrollEvent)
-  }
-
-
-
-  backgroundController() {
-console.log(this.state)
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
-
-   if (window.scrollY > 700) {
-
-     return(
-       <div className="container" style={this.state.backgroundContainer }>
-          <img style={{width:windowWidth}} src={background} alt="background" />
-       </div>
-     );
-
-   } else {
-
-     return(
-       <div className="container" style={this.state.backgroundContainer }>
-           <img style={{width:windowWidth}} src={background} alt="background" />
-           <div className="background_image_position">
-
-           <Spring from={{ opacity: 0, marginTop: -10 }} to={{ opacity: 1, marginTop: 0 }} config={{ delay:300, duration:500 }}>
-
-             { props => (
-               <div style={props}>
-                  <img className="background_welcome_image" src={welcome} alt="welcome" />
-               </div>
-             )}
-
-             </Spring>
-
-           </div>
-       </div>
-     );
-
-   }
-
-  }
 
 
 
   render() {
-    return (
 
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+
+    return (
       <div>
-        {this.backgroundController()}
+          <Spring from={{ height:windowHeight}} to={{ height:500 }} config={{ delay:3000, duration:1000 }}>
+            { props => (
+                <div className="container" style={props}>
+                    <img style={{width:windowWidth}} src={background} alt="background" />
+
+                    {this.welcomeImageController()}
+
+                </div>
+            )}
+          </Spring>
       </div>
 
       );
