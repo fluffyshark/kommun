@@ -1,5 +1,4 @@
 import React from 'react';
-import billeshogskolan from './img/billeshogskolan.png';
 import {Spring} from 'react-spring/renderprops'
 
 class SearchResults extends React.Component {
