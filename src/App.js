@@ -2,8 +2,9 @@ import React from 'react';
 import BackgroundVideo from './BackgroundVideo';
 import Header from './Header';
 import BigTopic from './BigTopic';
-import Footer from './Footer.js';
-import Searchbar from './Searchbar.js';
+import Footer from './Footer';
+import Searchbar from './Searchbar';
+import Events from './Events'
 
 
 
@@ -32,6 +33,7 @@ class App extends React.Component {
           <Header />
           <Searchbar searchBase={searchBase}/>
           <BigTopic />
+          <Events />
           <Footer />
       </div>
     );

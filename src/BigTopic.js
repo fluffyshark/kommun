@@ -9,7 +9,7 @@ class BigTopic extends React.Component {
   render(){
     return(
       <div className="bigtopic_text" >
-        Hello
+        Nyheter
       </div>
 
     );
