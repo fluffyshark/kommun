@@ -57,7 +57,7 @@ class Searchbar extends React.Component {
 
 
         <div className="grid_centering" style={this.state.dispayResults}>
-          <div className="grid-container ">
+          <div className="grid-container">
 
               {filteredSearch.map((search) => {
                 return <SearchResults search={search} key={search.id}/>
