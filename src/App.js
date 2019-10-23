@@ -26,6 +26,45 @@ class App extends React.Component {
         image: "parkskolan"
       }]
 
+      let newsContent = [
+        {
+          id:1,
+          title: "Skånetrafiken får nya biljettautomater",
+          description:"Snart börjar Skånetrafiken utrullningen av de nya biljettautomaterna. Arbetet börjar vecka 43 och totalt ska över 200 au...",
+          image: "news_skanetrafiken"
+        },
+        {
+          id:2,
+          title: "Kommunfullmäktige sammanträder",
+          description:"Välkommen till kommunfullmäktiges sammanträde i kommunhuset, Svalöv, måndagen den 28 oktober klockan 18.30.",
+          image: "news_svalovemblem"
+        },
+        {
+          id:3,
+          title: "Årets kulturpristagare och kulturstipendiat är...",
+          description:"Svalövs kommuns kulturpris delas årligen ut som belöning för värdefulla och förtjänstfulla insatser som berikar och stim...",
+          image: "news_svalovemblem"
+        },
+        {
+          id:4,
+          title: "Höstlovsaktiviteter 2019",
+          description:"Snart är höstlovet här och då finns det många spännande aktiviteter för dig som är ledig.",
+          image: "news_hostlov"
+        },
+        {
+          id:5,
+          title: "Svalegatan avstängd för trafik",
+          description:"Från den 21 oktober kl 07.00 till den 25 oktober kl 18.00 kommer Svalegatan att vara avstängd mellan Torggatan och 100 m..",
+          image: "news_gata"
+        },
+        {
+          id:6,
+          title: "Kunskapsresultat över riksgenomsnittet",
+          description:"Totalt gick drygt 112 000 elever ut årskurs 9 i våras. 84,3 procent av eleverna var behöriga till ett nationellt progra...",
+          image: "news_svalovemblem"
+        }
+      ]
+
 
       let eventContent = [{
         id:1,
@@ -108,8 +147,8 @@ class App extends React.Component {
           <BackgroundVideo />
           <Header />
           <Searchbar searchBase={searchBase}/>
-          <BigTopic />
-          <Events eventContent={eventContent} />
+          <BigTopic newsContent={newsContent}/>
+          <Events eventContent={eventContent}/>
           <Footer />
       </div>
     );

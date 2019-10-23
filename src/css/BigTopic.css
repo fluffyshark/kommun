@@ -45,6 +45,7 @@
   background:#eeeeee;
   padding-top: 30px;
   padding-bottom: 130px;
+  margin:auto;
 }
 
 .bigtopic_bottom_section_container {
@@ -57,6 +58,7 @@
 .bigtopic_item_box_image_container {
   font-family: 'AvenirNext-regular';
   font-size: 14px;
+  min-height: 179px;
 }
 
 .bigtopic_billeshogskolan {
@@ -64,7 +66,6 @@
 }
 
 .bigtopic_topic_box{
-
   border: 2px solid #eeeeee;
   border-bottom-color: #d9d9d9;
   height: 350px;
@@ -72,4 +73,8 @@
   text-align: left;
   margin:auto;
   background:white;
+  float:left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
 }
